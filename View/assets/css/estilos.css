@@ -909,4 +909,316 @@ a {
         text-align: center;
     }
 
+    /* =========================================
+   REGISTRO DE ABONOS
+========================================= */
+
+.registro {
+    padding: 70px 30px 90px;
+}
+
+.registro-contenedor {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.registro-encabezado {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.registro-encabezado h1 {
+    color: #0f172a;
+    font-size: 36px;
+    letter-spacing: -0.8px;
+    margin-bottom: 12px;
+}
+
+.registro-encabezado > p:last-child {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* FORMULARIO */
+
+.formulario-abono {
+    background-color: white;
+    border: 1px solid #e5eaf0;
+    border-radius: 18px;
+    padding: 35px;
+
+    box-shadow:
+        0 15px 40px rgba(15, 23, 42, 0.06),
+        0 4px 12px rgba(15, 23, 42, 0.03);
+}
+
+.form-grupo {
+    margin-bottom: 23px;
+}
+
+.form-grupo label {
+    display: block;
+
+    color: #334155;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+.form-grupo input,
+.form-grupo select {
+    width: 100%;
+    height: 48px;
+
+    background-color: white;
+
+    color: #334155;
+
+    border: 1px solid #dbe2ea;
+    border-radius: 10px;
+
+    padding: 0 14px;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    transition: all 0.2s ease;
+}
+
+.form-grupo input:focus,
+.form-grupo select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* SALDO DE SOLO LECTURA */
+
+.form-grupo input[readonly] {
+    background-color: #f8fafc;
+
+    color: #475569;
+
+    cursor: not-allowed;
+}
+
+
+/* PLACEHOLDER */
+
+.form-grupo input::placeholder {
+    color: #94a3b8;
+}
+
+
+/* MENSAJE DE VALIDACIÓN */
+
+#mensajeSaldo {
+    display: block;
+
+    color: #dc2626;
+
+    font-size: 12px;
+
+    margin-top: 8px;
+}
+
+
+/* MENSAJES DE ERROR */
+
+.mensaje-error {
+    background-color: #fef2f2;
+
+    color: #b91c1c;
+
+    border: 1px solid #fecaca;
+
+    border-radius: 10px;
+
+    padding: 13px 15px;
+
+    margin-bottom: 20px;
+
+    font-size: 13px;
+}
+
+
+/* BOTONES DEL FORMULARIO */
+
+.form-acciones {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+.form-acciones .btn {
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   CONSULTA DE COMPRAS
+========================================= */
+
+.consulta {
+    padding: 70px 30px 90px;
+}
+
+.consulta-contenedor {
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+.consulta-encabezado {
+    margin-bottom: 35px;
+}
+
+.consulta-encabezado h1 {
+    color: #0f172a;
+
+    font-size: 36px;
+
+    letter-spacing: -0.8px;
+
+    margin-bottom: 12px;
+}
+
+.consulta-encabezado > p:last-child {
+    color: #64748b;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* CONTENEDOR DE TABLA */
+
+.tabla-contenedor {
+    width: 100%;
+
+    overflow-x: auto;
+
+    background-color: white;
+
+    border: 1px solid #e5eaf0;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 15px 40px rgba(15, 23, 42, 0.06),
+        0 4px 12px rgba(15, 23, 42, 0.03);
+}
+
+
+/* TABLA */
+
+.tabla-compras {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 14px;
+}
+
+
+/* ENCABEZADO */
+
+.tabla-compras thead {
+    background-color: #f8fafc;
+}
+
+.tabla-compras th {
+    color: #64748b;
+
+    text-align: left;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+    padding: 17px 20px;
+
+    border-bottom: 1px solid #e5eaf0;
+}
+
+
+/* FILAS */
+
+.tabla-compras td {
+    color: #334155;
+
+    padding: 18px 20px;
+
+    border-bottom: 1px solid #eef2f6;
+}
+
+.tabla-compras tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.tabla-compras tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.tabla-compras tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* PRIMERA COLUMNA */
+
+.tabla-compras td:first-child {
+    color: #2563eb;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   RESPONSIVE REGISTRO Y CONSULTA
+========================================= */
+
+@media (max-width: 700px) {
+
+    .registro,
+    .consulta {
+        padding: 45px 20px 65px;
+    }
+
+    .registro-encabezado h1,
+    .consulta-encabezado h1 {
+        font-size: 30px;
+    }
+
+    .formulario-abono {
+        padding: 25px 20px;
+    }
+
+    .form-acciones {
+        flex-direction: column;
+    }
+
+    .tabla-compras th,
+    .tabla-compras td {
+        padding: 14px 15px;
+
+        white-space: nowrap;
+    }
+
+}
+
 }
